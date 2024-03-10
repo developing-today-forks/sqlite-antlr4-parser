@@ -53,7 +53,8 @@ func SplitStatement(statement string) (stmts []string, extraInfo SplitStatementE
 				insideCreateTriggerStmt = false
 			}
 		} else if currentToken.GetTokenType() == sqliteparser.SQLiteLexerSCOL {
-			stmtIntervals = append(stmtIntervals, antlr.NewInterval(currentIntervalStart, previousToken.GetTokenIndex()))
+			interval := antlr.NewInterval(currentIntervalStart, previousToken.GetTokenIndex())
+			stmtIntervals = append(stmtIntervals, &interval)
 			currentIntervalStart = -1
 		}
 
@@ -62,12 +63,13 @@ func SplitStatement(statement string) (stmts []string, extraInfo SplitStatementE
 	}
 
 	if currentIntervalStart != -1 && previousToken != nil {
-		stmtIntervals = append(stmtIntervals, antlr.NewInterval(currentIntervalStart, previousToken.GetTokenIndex()))
+		interval := antlr.NewInterval(currentIntervalStart, previousToken.GetTokenIndex())
+		stmtIntervals = append(stmtIntervals, &interval)
 	}
 
 	stmts = make([]string, 0)
 	for _, stmtInterval := range stmtIntervals {
-		stmts = append(stmts, tokenStream.GetTextFromInterval(stmtInterval))
+		stmts = append(stmts, statement[(*stmtInterval).Start:(*stmtInterval).Stop+1])
 	}
 
 	lastTokenType := antlr.TokenInvalidType
