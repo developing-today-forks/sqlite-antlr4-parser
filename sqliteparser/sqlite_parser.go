@@ -1817,7 +1817,7 @@ func (p *SQLiteParser) Sql_stmt_list() (localctx ISql_stmt_listContext) {
 	}
 	p.SetState(249)
 	p.GetErrorHandler().Sync(p)
-	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 3, p.GetParserRuleContext())
+	_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 3, p.GetParserRuleContext())
 
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
@@ -1843,11 +1843,11 @@ func (p *SQLiteParser) Sql_stmt_list() (localctx ISql_stmt_listContext) {
 		}
 		p.SetState(251)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 3, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 3, p.GetParserRuleContext())
 	}
 	p.SetState(255)
 	p.GetErrorHandler().Sync(p)
-	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 4, p.GetParserRuleContext())
+	_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 4, p.GetParserRuleContext())
 
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
@@ -1859,7 +1859,7 @@ func (p *SQLiteParser) Sql_stmt_list() (localctx ISql_stmt_listContext) {
 		}
 		p.SetState(257)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 4, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 4, p.GetParserRuleContext())
 	}
 
 	return localctx
@@ -2401,7 +2401,7 @@ func (p *SQLiteParser) Sql_stmt() (localctx ISql_stmtContext) {
 	}
 	p.SetState(289)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 7, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 7, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(265)
@@ -2839,7 +2839,7 @@ func (p *SQLiteParser) Alter_table_stmt() (localctx IAlter_table_stmtContext) {
 	p.SetState(296)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 8, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 8, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(293)
 			p.Schema_name()
@@ -2865,7 +2865,7 @@ func (p *SQLiteParser) Alter_table_stmt() (localctx IAlter_table_stmtContext) {
 		}
 		p.SetState(309)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 10, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 10, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(300)
@@ -2883,7 +2883,7 @@ func (p *SQLiteParser) Alter_table_stmt() (localctx IAlter_table_stmtContext) {
 			p.SetState(303)
 			p.GetErrorHandler().Sync(p)
 
-			if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 9, p.GetParserRuleContext()) == 1 {
+			if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 9, p.GetParserRuleContext()) == 1 {
 				{
 					p.SetState(302)
 					p.Match(SQLiteParserCOLUMN_)
@@ -2919,7 +2919,7 @@ func (p *SQLiteParser) Alter_table_stmt() (localctx IAlter_table_stmtContext) {
 		p.SetState(313)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 11, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 11, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(312)
 				p.Match(SQLiteParserCOLUMN_)
@@ -2939,7 +2939,7 @@ func (p *SQLiteParser) Alter_table_stmt() (localctx IAlter_table_stmtContext) {
 		p.SetState(318)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 12, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 12, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(317)
 				p.Match(SQLiteParserCOLUMN_)
@@ -3093,17 +3093,17 @@ func (p *SQLiteParser) Analyze_stmt() (localctx IAnalyze_stmtContext) {
 	p.SetState(331)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 15, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 15, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(324)
 			p.Schema_name()
 		}
 
-	} else if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 15, p.GetParserRuleContext()) == 2 {
+	} else if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 15, p.GetParserRuleContext()) == 2 {
 		p.SetState(328)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 14, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 14, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(325)
 				p.Schema_name()
@@ -3264,7 +3264,7 @@ func (p *SQLiteParser) Attach_stmt() (localctx IAttach_stmtContext) {
 	p.SetState(335)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 16, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 16, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(334)
 			p.Match(SQLiteParserDATABASE_)
@@ -3448,7 +3448,7 @@ func (p *SQLiteParser) Begin_stmt() (localctx IBegin_stmtContext) {
 		p.SetState(347)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 18, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 18, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(346)
 				p.Transaction_name()
@@ -3736,7 +3736,7 @@ func (p *SQLiteParser) Rollback_stmt() (localctx IRollback_stmtContext) {
 		p.SetState(361)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 22, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 22, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(360)
 				p.Match(SQLiteParserSAVEPOINT_)
@@ -3989,7 +3989,7 @@ func (p *SQLiteParser) Release_stmt() (localctx IRelease_stmtContext) {
 	p.SetState(371)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 24, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 24, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(370)
 			p.Match(SQLiteParserSAVEPOINT_)
@@ -4287,7 +4287,7 @@ func (p *SQLiteParser) Create_index_stmt() (localctx ICreate_index_stmtContext) 
 	p.SetState(383)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 26, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 26, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(380)
 			p.Match(SQLiteParserIF_)
@@ -4305,7 +4305,7 @@ func (p *SQLiteParser) Create_index_stmt() (localctx ICreate_index_stmtContext) 
 	p.SetState(388)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 27, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 27, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(385)
 			p.Schema_name()
@@ -4537,7 +4537,7 @@ func (p *SQLiteParser) Indexed_column() (localctx IIndexed_columnContext) {
 	p.EnterOuterAlt(localctx, 1)
 	p.SetState(409)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 30, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 30, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(407)
@@ -4920,7 +4920,7 @@ func (p *SQLiteParser) Create_table_stmt() (localctx ICreate_table_stmtContext) 
 	p.SetState(426)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 34, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 34, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(423)
 			p.Match(SQLiteParserIF_)
@@ -4938,7 +4938,7 @@ func (p *SQLiteParser) Create_table_stmt() (localctx ICreate_table_stmtContext) 
 	p.SetState(431)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 35, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 35, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(428)
 			p.Schema_name()
@@ -4968,7 +4968,7 @@ func (p *SQLiteParser) Create_table_stmt() (localctx ICreate_table_stmtContext) 
 		}
 		p.SetState(440)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 36, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 36, p.GetParserRuleContext())
 
 		for _alt != 1 && _alt != antlr.ATNInvalidAltNumber {
 			if _alt == 1+1 {
@@ -4984,7 +4984,7 @@ func (p *SQLiteParser) Create_table_stmt() (localctx ICreate_table_stmtContext) 
 			}
 			p.SetState(442)
 			p.GetErrorHandler().Sync(p)
-			_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 36, p.GetParserRuleContext())
+			_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 36, p.GetParserRuleContext())
 		}
 		p.SetState(447)
 		p.GetErrorHandler().Sync(p)
@@ -5213,7 +5213,7 @@ func (p *SQLiteParser) Column_def() (localctx IColumn_defContext) {
 	p.SetState(461)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 40, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 40, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(460)
 			p.Type_name()
@@ -5442,12 +5442,12 @@ func (p *SQLiteParser) Type_name() (localctx IType_nameContext) {
 
 		p.SetState(472)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 42, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 42, p.GetParserRuleContext())
 	}
 	p.SetState(484)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 43, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 43, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(474)
 			p.Match(SQLiteParserOPEN_PAR)
@@ -5461,7 +5461,7 @@ func (p *SQLiteParser) Type_name() (localctx IType_nameContext) {
 			p.Match(SQLiteParserCLOSE_PAR)
 		}
 
-	} else if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 43, p.GetParserRuleContext()) == 2 {
+	} else if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 43, p.GetParserRuleContext()) == 2 {
 		{
 			p.SetState(478)
 			p.Match(SQLiteParserOPEN_PAR)
@@ -5924,7 +5924,7 @@ func (p *SQLiteParser) Column_constraint() (localctx IColumn_constraintContext) 
 		}
 		p.SetState(523)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 51, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 51, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(517)
@@ -7082,7 +7082,7 @@ func (p *SQLiteParser) Foreign_key_clause() (localctx IForeign_key_clauseContext
 	p.SetState(629)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 69, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 69, p.GetParserRuleContext()) == 1 {
 		p.SetState(622)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
@@ -7801,7 +7801,7 @@ func (p *SQLiteParser) Create_trigger_stmt() (localctx ICreate_trigger_stmtConte
 	p.SetState(643)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 71, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 71, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(640)
 			p.Match(SQLiteParserIF_)
@@ -7819,7 +7819,7 @@ func (p *SQLiteParser) Create_trigger_stmt() (localctx ICreate_trigger_stmtConte
 	p.SetState(648)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 72, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 72, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(645)
 			p.Schema_name()
@@ -7975,7 +7975,7 @@ func (p *SQLiteParser) Create_trigger_stmt() (localctx ICreate_trigger_stmtConte
 	for ok := true; ok; ok = _la == SQLiteParserDELETE_ || ((int64((_la-88)) & ^0x3f) == 0 && ((int64(1)<<(_la-88))&2386912217732743169) != 0) {
 		p.SetState(689)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 79, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 79, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(685)
@@ -8291,7 +8291,7 @@ func (p *SQLiteParser) Create_view_stmt() (localctx ICreate_view_stmtContext) {
 	p.SetState(707)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 82, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 82, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(704)
 			p.Match(SQLiteParserIF_)
@@ -8309,7 +8309,7 @@ func (p *SQLiteParser) Create_view_stmt() (localctx ICreate_view_stmtContext) {
 	p.SetState(712)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 83, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 83, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(709)
 			p.Schema_name()
@@ -8627,7 +8627,7 @@ func (p *SQLiteParser) Create_virtual_table_stmt() (localctx ICreate_virtual_tab
 	p.SetState(737)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 86, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 86, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(734)
 			p.Match(SQLiteParserIF_)
@@ -8645,7 +8645,7 @@ func (p *SQLiteParser) Create_virtual_table_stmt() (localctx ICreate_virtual_tab
 	p.SetState(742)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 87, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 87, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(739)
 			p.Schema_name()
@@ -8937,7 +8937,7 @@ func (p *SQLiteParser) With_clause() (localctx IWith_clauseContext) {
 	p.SetState(762)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 90, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 90, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(761)
 			p.Match(SQLiteParserRECURSIVE_)
@@ -10290,7 +10290,7 @@ func (p *SQLiteParser) Detach_stmt() (localctx IDetach_stmtContext) {
 	p.SetState(859)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 105, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 105, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(858)
 			p.Match(SQLiteParserDATABASE_)
@@ -10500,7 +10500,7 @@ func (p *SQLiteParser) Drop_stmt() (localctx IDrop_stmtContext) {
 	p.SetState(867)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 106, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 106, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(865)
 			p.Match(SQLiteParserIF_)
@@ -10514,7 +10514,7 @@ func (p *SQLiteParser) Drop_stmt() (localctx IDrop_stmtContext) {
 	p.SetState(872)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 107, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 107, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(869)
 			p.Schema_name()
@@ -11150,7 +11150,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 	p.EnterOuterAlt(localctx, 1)
 	p.SetState(964)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 121, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 121, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(877)
@@ -11167,11 +11167,11 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 		p.SetState(887)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 109, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 109, p.GetParserRuleContext()) == 1 {
 			p.SetState(882)
 			p.GetErrorHandler().Sync(p)
 
-			if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 108, p.GetParserRuleContext()) == 1 {
+			if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 108, p.GetParserRuleContext()) == 1 {
 				{
 					p.SetState(879)
 					p.Schema_name()
@@ -11224,7 +11224,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 			p.SetState(896)
 			p.GetErrorHandler().Sync(p)
 
-			if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 110, p.GetParserRuleContext()) == 1 {
+			if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 110, p.GetParserRuleContext()) == 1 {
 				{
 					p.SetState(895)
 					p.Match(SQLiteParserDISTINCT_)
@@ -11271,7 +11271,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 		p.SetState(911)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 113, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 113, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(910)
 				p.Filter_clause()
@@ -11281,7 +11281,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 		p.SetState(914)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 114, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 114, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(913)
 				p.Over_clause()
@@ -11391,7 +11391,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 		p.SetState(946)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 118, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 118, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(945)
 				p.expr(0)
@@ -11454,7 +11454,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 	p.GetParserRuleContext().SetStop(p.GetTokenStream().LT(-1))
 	p.SetState(1085)
 	p.GetErrorHandler().Sync(p)
-	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 137, p.GetParserRuleContext())
+	_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 137, p.GetParserRuleContext())
 
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
@@ -11464,7 +11464,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 			_prevctx = localctx
 			p.SetState(1083)
 			p.GetErrorHandler().Sync(p)
-			switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 136, p.GetParserRuleContext()) {
+			switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 136, p.GetParserRuleContext()) {
 			case 1:
 				localctx = NewExprContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SQLiteParserRULE_expr)
@@ -11588,7 +11588,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 				}
 				p.SetState(994)
 				p.GetErrorHandler().Sync(p)
-				switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 122, p.GetParserRuleContext()) {
+				switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 122, p.GetParserRuleContext()) {
 				case 1:
 					{
 						p.SetState(982)
@@ -11714,7 +11714,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 				p.SetState(1006)
 				p.GetErrorHandler().Sync(p)
 
-				if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 123, p.GetParserRuleContext()) == 1 {
+				if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 123, p.GetParserRuleContext()) == 1 {
 					{
 						p.SetState(1005)
 						p.Match(SQLiteParserNOT_)
@@ -11816,7 +11816,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 				p.SetState(1029)
 				p.GetErrorHandler().Sync(p)
 
-				if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 126, p.GetParserRuleContext()) == 1 {
+				if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 126, p.GetParserRuleContext()) == 1 {
 					{
 						p.SetState(1027)
 						p.Match(SQLiteParserESCAPE_)
@@ -11891,7 +11891,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 				}
 				p.SetState(1081)
 				p.GetErrorHandler().Sync(p)
-				switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 135, p.GetParserRuleContext()) {
+				switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 135, p.GetParserRuleContext()) {
 				case 1:
 					{
 						p.SetState(1043)
@@ -11900,13 +11900,13 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 					p.SetState(1053)
 					p.GetErrorHandler().Sync(p)
 
-					if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 130, p.GetParserRuleContext()) == 1 {
+					if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 130, p.GetParserRuleContext()) == 1 {
 						{
 							p.SetState(1044)
 							p.Select_stmt()
 						}
 
-					} else if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 130, p.GetParserRuleContext()) == 2 {
+					} else if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 130, p.GetParserRuleContext()) == 2 {
 						{
 							p.SetState(1045)
 							p.expr(0)
@@ -11940,7 +11940,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 					p.SetState(1059)
 					p.GetErrorHandler().Sync(p)
 
-					if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 131, p.GetParserRuleContext()) == 1 {
+					if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 131, p.GetParserRuleContext()) == 1 {
 						{
 							p.SetState(1056)
 							p.Schema_name()
@@ -11960,7 +11960,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 					p.SetState(1065)
 					p.GetErrorHandler().Sync(p)
 
-					if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 132, p.GetParserRuleContext()) == 1 {
+					if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 132, p.GetParserRuleContext()) == 1 {
 						{
 							p.SetState(1062)
 							p.Schema_name()
@@ -12020,7 +12020,7 @@ func (p *SQLiteParser) expr(_p int) (localctx IExprContext) {
 		}
 		p.SetState(1087)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 137, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 137, p.GetParserRuleContext())
 	}
 
 	return localctx
@@ -13075,7 +13075,7 @@ func (p *SQLiteParser) Insert_stmt() (localctx IInsert_stmtContext) {
 	}
 	p.SetState(1128)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 142, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 142, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(1123)
@@ -13117,7 +13117,7 @@ func (p *SQLiteParser) Insert_stmt() (localctx IInsert_stmtContext) {
 	p.SetState(1134)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 143, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 143, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1131)
 			p.Schema_name()
@@ -13191,7 +13191,7 @@ func (p *SQLiteParser) Insert_stmt() (localctx IInsert_stmtContext) {
 	case SQLiteParserSELECT_, SQLiteParserVALUES_, SQLiteParserWITH_:
 		p.SetState(1156)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 147, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 147, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(1154)
@@ -13831,7 +13831,7 @@ func (p *SQLiteParser) Upsert_clause() (localctx IUpsert_clauseContext) {
 
 		p.SetState(1201)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 155, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 155, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(1199)
@@ -13864,7 +13864,7 @@ func (p *SQLiteParser) Upsert_clause() (localctx IUpsert_clauseContext) {
 			}
 			p.SetState(1208)
 			p.GetErrorHandler().Sync(p)
-			switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 156, p.GetParserRuleContext()) {
+			switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 156, p.GetParserRuleContext()) {
 			case 1:
 				{
 					p.SetState(1206)
@@ -14081,7 +14081,7 @@ func (p *SQLiteParser) Pragma_stmt() (localctx IPragma_stmtContext) {
 	p.SetState(1228)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 160, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 160, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1225)
 			p.Schema_name()
@@ -14256,7 +14256,7 @@ func (p *SQLiteParser) Pragma_value() (localctx IPragma_valueContext) {
 
 	p.SetState(1242)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 162, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 162, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
@@ -14452,17 +14452,17 @@ func (p *SQLiteParser) Reindex_stmt() (localctx IReindex_stmtContext) {
 	p.SetState(1255)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 165, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 165, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1245)
 			p.Collation_name()
 		}
 
-	} else if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 165, p.GetParserRuleContext()) == 2 {
+	} else if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 165, p.GetParserRuleContext()) == 2 {
 		p.SetState(1249)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 163, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 163, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1246)
 				p.Schema_name()
@@ -14475,7 +14475,7 @@ func (p *SQLiteParser) Reindex_stmt() (localctx IReindex_stmtContext) {
 		}
 		p.SetState(1253)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 164, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 164, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(1251)
@@ -14736,7 +14736,7 @@ func (p *SQLiteParser) Select_stmt() (localctx ISelect_stmtContext) {
 	}
 	p.SetState(1266)
 	p.GetErrorHandler().Sync(p)
-	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 167, p.GetParserRuleContext())
+	_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 167, p.GetParserRuleContext())
 
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
@@ -14752,7 +14752,7 @@ func (p *SQLiteParser) Select_stmt() (localctx ISelect_stmtContext) {
 		}
 		p.SetState(1268)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 167, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 167, p.GetParserRuleContext())
 	}
 	p.SetState(1270)
 	p.GetErrorHandler().Sync(p)
@@ -15014,7 +15014,7 @@ func (p *SQLiteParser) Join_clause() (localctx IJoin_clauseContext) {
 		p.SetState(1279)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 170, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 170, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1278)
 				p.Join_constraint()
@@ -15485,7 +15485,7 @@ func (p *SQLiteParser) Select_core() (localctx ISelect_coreContext) {
 		p.SetState(1288)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 172, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 172, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1287)
 				_la = p.GetTokenStream().LA(1)
@@ -15532,7 +15532,7 @@ func (p *SQLiteParser) Select_core() (localctx ISelect_coreContext) {
 			}
 			p.SetState(1308)
 			p.GetErrorHandler().Sync(p)
-			switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 175, p.GetParserRuleContext()) {
+			switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 175, p.GetParserRuleContext()) {
 			case 1:
 				{
 					p.SetState(1299)
@@ -16660,13 +16660,13 @@ func (p *SQLiteParser) Table_or_subquery() (localctx ITable_or_subqueryContext) 
 
 	p.SetState(1450)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 205, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 205, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		p.SetState(1389)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 193, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 193, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1386)
 				p.Schema_name()
@@ -16684,11 +16684,11 @@ func (p *SQLiteParser) Table_or_subquery() (localctx ITable_or_subqueryContext) 
 		p.SetState(1396)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 195, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 195, p.GetParserRuleContext()) == 1 {
 			p.SetState(1393)
 			p.GetErrorHandler().Sync(p)
 
-			if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 194, p.GetParserRuleContext()) == 1 {
+			if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 194, p.GetParserRuleContext()) == 1 {
 				{
 					p.SetState(1392)
 					p.Match(SQLiteParserAS_)
@@ -16739,7 +16739,7 @@ func (p *SQLiteParser) Table_or_subquery() (localctx ITable_or_subqueryContext) 
 		p.SetState(1408)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 197, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 197, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1405)
 				p.Schema_name()
@@ -16787,11 +16787,11 @@ func (p *SQLiteParser) Table_or_subquery() (localctx ITable_or_subqueryContext) 
 		p.SetState(1425)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 200, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 200, p.GetParserRuleContext()) == 1 {
 			p.SetState(1422)
 			p.GetErrorHandler().Sync(p)
 
-			if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 199, p.GetParserRuleContext()) == 1 {
+			if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 199, p.GetParserRuleContext()) == 1 {
 				{
 					p.SetState(1421)
 					p.Match(SQLiteParserAS_)
@@ -16813,7 +16813,7 @@ func (p *SQLiteParser) Table_or_subquery() (localctx ITable_or_subqueryContext) 
 		}
 		p.SetState(1437)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 202, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 202, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(1428)
@@ -16867,11 +16867,11 @@ func (p *SQLiteParser) Table_or_subquery() (localctx ITable_or_subqueryContext) 
 		p.SetState(1448)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 204, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 204, p.GetParserRuleContext()) == 1 {
 			p.SetState(1445)
 			p.GetErrorHandler().Sync(p)
 
-			if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 203, p.GetParserRuleContext()) == 1 {
+			if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 203, p.GetParserRuleContext()) == 1 {
 				{
 					p.SetState(1444)
 					p.Match(SQLiteParserAS_)
@@ -17042,7 +17042,7 @@ func (p *SQLiteParser) Result_column() (localctx IResult_columnContext) {
 
 	p.SetState(1464)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 208, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 208, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
@@ -18084,7 +18084,7 @@ func (p *SQLiteParser) Update_stmt() (localctx IUpdate_stmtContext) {
 	p.SetState(1511)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 218, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 218, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1509)
 			p.Match(SQLiteParserOR_)
@@ -18112,7 +18112,7 @@ func (p *SQLiteParser) Update_stmt() (localctx IUpdate_stmtContext) {
 	}
 	p.SetState(1517)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 219, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 219, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(1515)
@@ -18145,7 +18145,7 @@ func (p *SQLiteParser) Update_stmt() (localctx IUpdate_stmtContext) {
 		}
 		p.SetState(1524)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 220, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 220, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(1522)
@@ -18183,7 +18183,7 @@ func (p *SQLiteParser) Update_stmt() (localctx IUpdate_stmtContext) {
 		}
 		p.SetState(1544)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 223, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 223, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(1535)
@@ -18811,7 +18811,7 @@ func (p *SQLiteParser) Update_stmt_limited() (localctx IUpdate_stmt_limitedConte
 	p.SetState(1572)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 229, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 229, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1570)
 			p.Match(SQLiteParserOR_)
@@ -18839,7 +18839,7 @@ func (p *SQLiteParser) Update_stmt_limited() (localctx IUpdate_stmt_limitedConte
 	}
 	p.SetState(1578)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 230, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 230, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(1576)
@@ -18872,7 +18872,7 @@ func (p *SQLiteParser) Update_stmt_limited() (localctx IUpdate_stmt_limitedConte
 		}
 		p.SetState(1585)
 		p.GetErrorHandler().Sync(p)
-		switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 231, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 231, p.GetParserRuleContext()) {
 		case 1:
 			{
 				p.SetState(1583)
@@ -19132,7 +19132,7 @@ func (p *SQLiteParser) Qualified_table_name() (localctx IQualified_table_nameCon
 	p.SetState(1611)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 237, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 237, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1608)
 			p.Schema_name()
@@ -19334,7 +19334,7 @@ func (p *SQLiteParser) Vacuum_stmt() (localctx IVacuum_stmtContext) {
 	p.SetState(1627)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 240, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 240, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1626)
 			p.Schema_name()
@@ -19757,7 +19757,7 @@ func (p *SQLiteParser) Window_defn() (localctx IWindow_defnContext) {
 	p.SetState(1641)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 242, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 242, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1640)
 			p.Base_window_name()
@@ -20125,7 +20125,7 @@ func (p *SQLiteParser) Over_clause() (localctx IOver_clauseContext) {
 	}
 	p.SetState(1704)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 253, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 253, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(1671)
@@ -20140,7 +20140,7 @@ func (p *SQLiteParser) Over_clause() (localctx IOver_clauseContext) {
 		p.SetState(1674)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 247, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 247, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1673)
 				p.Base_window_name()
@@ -20611,7 +20611,7 @@ func (p *SQLiteParser) Frame_clause() (localctx IFrame_clauseContext) {
 	}
 	p.SetState(1725)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 256, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 256, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(1719)
@@ -21072,7 +21072,7 @@ func (p *SQLiteParser) Aggregate_function_invocation() (localctx IAggregate_func
 		p.SetState(1745)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 259, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 259, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1744)
 				p.Match(SQLiteParserDISTINCT_)
@@ -21424,7 +21424,7 @@ func (p *SQLiteParser) Window_function_invocation() (localctx IWindow_function_i
 	}
 	p.SetState(1782)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 266, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 266, p.GetParserRuleContext()) {
 	case 1:
 		{
 			p.SetState(1780)
@@ -21597,7 +21597,7 @@ func (p *SQLiteParser) Common_table_stmt() (localctx ICommon_table_stmtContext) 
 	p.SetState(1786)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 267, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 267, p.GetParserRuleContext()) == 1 {
 		{
 			p.SetState(1785)
 			p.Match(SQLiteParserRECURSIVE_)
@@ -22438,7 +22438,7 @@ func (p *SQLiteParser) Frame_left() (localctx IFrame_leftContext) {
 
 	p.SetState(1836)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 274, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 274, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
@@ -22615,7 +22615,7 @@ func (p *SQLiteParser) Frame_right() (localctx IFrame_rightContext) {
 
 	p.SetState(1848)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 275, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 275, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
@@ -22787,7 +22787,7 @@ func (p *SQLiteParser) Frame_single() (localctx IFrame_singleContext) {
 
 	p.SetState(1857)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 276, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 276, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
@@ -23328,7 +23328,7 @@ func (p *SQLiteParser) Window_function() (localctx IWindow_functionContext) {
 		p.SetState(1901)
 		p.GetErrorHandler().Sync(p)
 
-		if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 282, p.GetParserRuleContext()) == 1 {
+		if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 282, p.GetParserRuleContext()) == 1 {
 			{
 				p.SetState(1900)
 				p.Offset()
@@ -23896,7 +23896,7 @@ func (p *SQLiteParser) Partition_by() (localctx IPartition_byContext) {
 
 		p.SetState(1957)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 289, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 289, p.GetParserRuleContext())
 	}
 
 	return localctx
@@ -24976,7 +24976,7 @@ func (p *SQLiteParser) Module_argument() (localctx IModule_argumentContext) {
 
 	p.SetState(1994)
 	p.GetErrorHandler().Sync(p)
-	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 294, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 294, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
